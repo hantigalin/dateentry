@@ -708,7 +708,7 @@
 			var month = 0;
 			var day = 0;
 			var seen = [false, false, false];
-			for (var i = 0; i <= inst._lastField; i++) {
+			for (var i = 0; i <= values.length; i++) {
 				var num = parseInt(values[i], 10);
 				num = (isNaN(num) ? 0 : num);
 				var field = inst.options.dateFormat.charAt(i);
